@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>COVID Scale</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+	var random_script = function() {
+    // while (true) {
+    setInterval(function(){
+       var t = Math.round(Math.random() * (1000 - 1) + 1);
+       document.getElementById("rval").innerHTML = t;
+    }, 300);
+    // }
+}();
+</script>
+</head>
+<body>
+	<div id="airlock">
+	<div id="covid-meter"><div id="covid-needle"></div></div>
+	<div id="covid-R">R<span id="rvalue"> = 1.2<span id="rval"></span></span></div>
+	</div>
+</body>
+</html>
